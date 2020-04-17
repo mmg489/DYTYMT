@@ -11,11 +11,12 @@
     <button onclick="toggle()">Yes I Took It!</button>
 
     <script>
-      let testBool = true;
+      let testBool = false;
+      let confirmBool = true;
       console.log("Default value of bool is", testBool);
 
       function toggle() {
-        testBool = !testBool;
+        testBool = confirmBool;
         console.log("Toggled Bool is", testBool);
       }
     </script>
