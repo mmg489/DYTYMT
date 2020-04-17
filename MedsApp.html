@@ -6,17 +6,18 @@
   </head>
   <body>
     <h1>Did you take your pill today?</h1>
-    <script type="text/javascript">
-      //declare variables//
-      var pillTaken = false;
-      var dateAnswered = Date;
 
-      ///variables will be: boolean yes or no for pill
-      ///variable 2: date of answer
+    <b>Click To Confirm Pill Taken today </b>
+    <button onclick="toggle()">Yes I Took It!</button>
 
-      ///button for display
+    <script>
+      let testBool = true;
+      console.log("Default value of bool is", testBool);
 
-      ///script
+      function toggle() {
+        testBool = !testBool;
+        console.log("Toggled Bool is", testBool);
+      }
     </script>
   </body>
 </html>
