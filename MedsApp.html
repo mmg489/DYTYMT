@@ -9,7 +9,7 @@
 
     <b>Click To Confirm Pill Taken today </b>
     <button onclick="toggle()">Yes I Took It!</button>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       let testBool = false;
       let confirmBool = true;
@@ -19,6 +19,9 @@
         testBool = confirmBool;
         console.log("Toggled Bool is", testBool);
       }
+      $(document).ready(function () {
+        $(":button").css("background-color", "Magenta");
+      });
     </script>
   </body>
 </html>
